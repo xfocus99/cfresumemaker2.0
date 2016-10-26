@@ -1,0 +1,724 @@
+/*
+=================================
+=================================
+			style.css
+
+main stylesheet for Test Data
+By Mitch Samuels
+04/12/2015
+
+		Table of Content:
+#0 Body, technical
+#1 Links, text, paragraphs
+#2 Universal styles
+#3 Element specific styles
+#4 Media Queries/Mobile
+=================================
+=================================
+*/
+
+#mobilenav{
+  display: none;
+}
+
+#welcome_back{
+  display: none;
+  width: 100%;
+  width: calc(100% - 235px);
+  position: fixed; top: 0; right: 0;
+  box-sizing:border-box;
+  padding: 10px 2.5% 10px 2.5%;
+  letter-spacing: 1px;
+  background-color: #eb3349;
+  z-index: 5000000000;
+  color: #fff;
+  font-size: 10pt;
+  font-weight: 400;
+  text-align: left; 
+}
+  #welcome_back a{
+    float: right;
+    color: #fff;
+    margin-left: 22px;
+    font-size: 14pt;
+    transition:0.25s;
+  } 
+    #welcome_back a:hover{
+      -webkit-transform:rotate(15deg);
+      transform: rotate(15deg);
+      transition:0.25s;
+      cursor: pointer;
+    }
+    #welcome_back a:active{
+      -webkit-transform:rotate(35deg);
+      transform: rotate(35deg);
+      transition:0.25s;
+    }
+
+
+progress{
+  position: fixed;
+  top: 0; left: 235px;
+  width: 90%;
+  width: calc(100% - 235px);
+  border-radius: 0;
+  height: 4px;
+  z-index: 500000;
+  background: #fff;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+  progress::-webkit-progress-bar {background-color: #fff;}
+    progress::-webkit-progress-value {background: #8e54e3;}
+
+nav{
+  width:235px;
+  height: 100%;
+  position: fixed; top: 0; left: 0;
+  overflow-x:auto;
+}
+  nav h3{
+    margin: 0; padding: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16pt;
+    letter-spacing: 1px;
+    box-sizing:border-box;
+    padding: 25px;
+    transition:0.2s;
+  }
+    nav h3:hover{
+      cursor: pointer;
+      transition:0.2s;
+      opacity: 0.85;
+    }
+    nav img{
+      width: 80px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  nav ul{
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    padding: 0; margin: 0 auto;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    box-sizing:border-box;
+    padding: 5px 20px 15px 20px;
+  }
+    nav ul li{
+      box-sizing: border-box;
+      padding: 11px 7px 10px 12px;
+      font-size: 9pt;
+      text-transform: uppercase;
+      border-radius: 16px;
+      margin-bottom: 8px;
+      transition:0.25s;
+    }
+      nav ul li:hover{
+        background-color: rgba(255,255,255,0.25);
+        cursor: pointer;
+        transition:0.25s;
+      }
+      nav ul li:active{
+        background-color: rgba(255,255,255,0.45);
+        transition:0.25s;
+      }
+    nav ul .active{
+      background-color: rgba(255,255,255,0.25);
+    }
+
+    /*#listheader{
+      margin-bottom: 0;
+      padding-bottom: 0;
+    } 
+    #listheader:hover{
+      background-color: rgba(0,0,0,0);
+      cursor: default;
+    }*/
+
+    nav ul li ul li{
+      font-size: 7pt;
+      margin-bottom: 1px;
+      padding: 7px 7px 7px 7px;
+    }
+      nav ul li ul li:last-child{
+        margin-bottom: 0;
+      }
+
+
+section{
+  width: 90%;
+  width: calc(100% - 235px);
+  position: relative; left: 235px;
+  box-sizing:border-box;
+  padding: 55px 4% 75px 4% !important;
+  margin: 0 auto;
+}
+  section h1{
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+  }
+
+
+/*
+  XXXX       XXXXX  XXXXX  XXXXX  XXXXX
+      X  XX  X      X   X  X      X
+    XX   XX  XXXXX  XXXXX  XXX    X
+      X  XX      X  X      X      X
+  XXXX       XXXXX  X      XXXXX  XXXXX
+*/
+
+
+/*========================================
+  ========================================
+              Forms
+  ========================================
+  ========================================*/
+.forms{
+ margin: 0  !important;
+}
+
+.formwrap{
+  width: 100%; max-width: 600px;
+  box-sizing:border-box;
+  padding: 10px 45px 55px 45px;
+  margin: 0 auto;
+}
+
+
+/*Dots for switching between jobs/projects*/
+.switch_dots{
+  font-size: 10pt;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px; padding-top: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+  .dot{
+    display: inline-block;
+    opacity: 0.6;
+    background-color: #4776e6;
+    height: 24px; width: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-left: 5px;
+    color: #fff;
+    transition:0.25s;
+  }
+    .activedot{opacity: 1; transition:0.25s;}
+    .dot:hover{
+      opacity: 1;
+      transition:0.25s;
+      cursor: pointer;
+    }
+
+
+/*Textarea*/
+textarea{
+  width: 100%; 
+  height: 400px;
+  line-height: 1.6em;
+  display: block;
+  box-sizing:border-box;
+  margin-bottom: 5px;
+  padding: 15px;
+  font-size: 11pt;
+  color: #4776e6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  border: 1px solid rgba(52,57,75,0.45);
+  margin-top: 4px;
+  border-radius: 8px;
+  background-color: rgba(50,50,50,0.0025);
+  letter-spacing: 1px;
+}
+::-webkit-textarea-placeholder {font-weight: 400; color: rgba(0,0,0,0.35);}
+:-ms-textarea-placeholder {font-weight: 400; color: rgba(0,0,0,0.35);}
+
+label{
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 10pt;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 2px;
+  padding-bottom: 7px;
+  color: rgba(52,57,75,1);
+  padding-top: 7px;
+
+}
+
+
+.formwrap p{
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgba(52,57,75,1);
+    line-height: 2em;
+    font-size: 11pt;
+    padding: 0;
+}
+
+.formwrap h6{
+  font-size: 18pt;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #4776e6;
+  /*color: rgba(0,0,0,0.35);*/
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+  .formbreak{
+    width: 100%;
+    height: 65px;
+  }
+
+
+
+
+
+#statement_counter{
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 400;
+  font-size: 9pt;
+  letter-spacing: 1px;
+}
+  #countit{
+    background-color: #fff847;
+    padding: 3px;
+  }
+
+
+/*Hint for users*/
+.hint{
+  font-size: 8pt !important;
+  opacity: 0.75 !important;
+}
+
+
+
+/*Multi option things*/
+#job2,
+#job3,
+#proj2,
+#proj3,
+#edu2,
+#edu3,
+#section_statement,
+#section_projects,
+#section_work,
+#section_education,
+#section_skills,
+#section_customization,
+#section_done{
+  display: none;
+}
+
+#section_done{
+  background-color: red;
+  overflow: hidden;
+}
+
+
+/*save button*/
+.saveit{
+  margin: 0 auto;
+  float: none;
+  width: 156px;
+  position: relative; left: 50%; margin-left: -77px;
+}
+
+
+/*Shrunken resume preview*/
+.shrunken{
+    /*Disable these in print query*/
+    z-index: 0;
+    padding: 0 0.5in 0 0.5in;
+    position: absolute; top: 0; left: 50% !important;
+    margin-left: -3.615in !important;
+    padding: 50px 0 50px 117px !important;
+  /*-webkit-transform: scale(0.55); /* Safari */*/
+    /*transform: scale(0.55);*/
+    transition:0s;
+}
+
+
+
+/*Edit/save resume styles*/
+#settings_instructions{
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 11pt;
+  padding-bottom: 35px; margin-bottom: 15px;
+  border-bottom: 1px solid rgba(50,50,50,0.15);
+  text-align: left;
+  line-height: 1.6em;
+  color: #000;
+}
+#finish_button_wrapper{
+  position: relative;
+  padding-top: 6; padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+#save_resume{
+  width: 45px; height: 45px;
+  display: inline-block;
+  font-size: 26pt;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: #4776e6;
+  border: 2px solid #4776e6;
+  transition:0.25s;
+  margin-right: 10px; margin-left: 10px;
+  margin-top: 15px;
+}
+  /*#edit_resume{bottom: 15px; right: 15px;}*/
+  /*#save_resume{bottom: 75px; right: 15px;}*/
+  #save_resume i{
+    position: relative; top: -7px;
+  }
+  #save_resume:hover{
+    cursor: pointer;
+    -webkit-tranform:rotate(20deg);
+    transform: rotate(20deg);
+    transition:0.25s;
+  }
+      #save_resume:active{
+        -webkit-tranform:rotate(-20deg);
+        transform: rotate(-20deg);
+        transition:0.25s;
+      }
+
+#settings_toggle{
+  height: auto;
+  margin-bottom: 20px;
+}
+
+	/*Styles for links within the resume*/
+	#pdf_contact a,
+	#pdf_experience_section a,
+	#pdf_projects_section a,
+	#pdf_education_section a{
+		color:#000;
+		border-bottom: 1px dotted black;
+	}
+	#print_page h2{
+		color: #000;
+	}
+
+	/*Horizontal Rules between sections*/
+	#print_page hr{
+		display: block !important;
+		opacity: 1;
+		color: transparent;
+		background-color: transparent;
+		border: 0px solid #000;
+		border-bottom: 1px solid rgba(0,0,0,0.075);
+		margin-top: 10px;
+		/*border-bottom: 1px solid #eef4f4;*/
+	}
+
+	/*H2s are the section headers: Statement Header, "Experience", "Education", etc.*/
+	#print_page h2{
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 14pt;
+		letter-spacing: 1px;
+		margin-bottom: 15px;
+		margin-top: 20px;
+	}
+
+
+
+	/*	======================
+			Personal Info
+		======================	*/
+
+	/*Person's Name*/
+	#namefill{
+		width: 100%;
+		text-align: center;
+		font-size: 28pt;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	/*Contact Information*/
+	#pdf_contact{
+	line-height: 2em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+	}
+		/*Adding spacing between items*/
+		#pdf_contact i{
+			padding-right: 1px;
+		}
+		#pdf_contact span{
+			padding-right: 11px;
+		}
+			#pdf_contact span:first-child{
+				padding-left: 11px;
+			}
+		/*Line break for link, bolder*/
+		#linkfill{
+			font-weight: 400;
+			display: block;
+		}
+
+
+	/*	======================
+		  Statement Section
+		======================	*/
+
+	/*Statement section wrapper*/
+	#pdf_statement_section{
+
+	}
+		#statementfill{
+			line-height: 1.6em;
+			text-align: left;
+			font-size: 9pt;
+			padding-bottom: 6px;
+			text-align: justify;
+			margin-top: 10px;
+			color: #000;
+			font-weight: 400;
+		}
+
+
+	/*	======================
+		  	Jobs Section
+		======================	*/
+
+	/*Wrapper for individual job - 3 max*/
+	.pdf_job_section{
+		text-align: left;
+		font-weight: 700;
+	}
+		/*Styling for ULs in job desc - only shows if user knows how to use it*/
+		.pdf_job_section ul{
+			padding: 0.05in 0 0.05in 0.5in; margin: 0 auto;
+		}
+
+
+			/*Add bullets between Employer/loc and loc/time */
+			#emp12fill:before,
+			#emp13fill:before,
+			#emp22fill:before,
+			#emp23fill:before,
+			#emp32fill:before,
+			#emp33fill:before{
+				content: " \A0 \A0 \A0 \2022 \A0 \A0 \A0";
+			}
+
+		/*	Employer and job description as well as proj description
+			Currently the same, can be different */
+		#emp14fill, 
+		#emp24fill, 
+		#emp34fill,
+		#emp16fill, 
+		#emp26fill, 
+		#emp36fill,
+		#proj1descfill,
+		#proj2descfill,
+		#proj3descfill{
+			font-weight: 300;
+			font-size: 10pt;
+			line-height: 1.5em;
+			margin: 0 auto;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		
+		/*Job Title (different from employer)*/
+		#emp15fill, 
+		#emp25fill, 
+		#emp35fill
+		{
+			font-size: 11pt;
+			letter-spacing: 1px;
+			font-weight: 400;
+		}
+
+		/*Styles specifically for 2nd and 3 jobs if shown*/
+		#pdf_job2, 
+		#pdf_job3{
+			padding-top: 15px;
+			margin-top: 12px;
+			border-top: 1px dashed rgba(0,0,0,0.05);
+		}
+
+
+	/*	======================
+		  	School Section
+		======================	*/
+
+	/*Wrapper around entire section*/
+	#pdf_education_section{
+
+	}
+		/*Wrapper around individual schools - 3 max*/
+		.pdf_education_section{
+			margin-bottom: 20px;
+		}
+		/*Degree name styling*/
+		#edu11fill,
+		#edu21fill,
+		#edu31fill{
+			font-size: 11pt;
+			font-weight: 700;
+			letter-spacing: 1px;
+			display: block;
+		}
+		/*School,Location,Graduation Date - all the same now - can be separated*/
+		#edu12fill,
+		#edu22fill,
+		#edu32fill,
+		#edu13fill,
+		#edu23fill,
+		#edu33fill,
+		#edu14fill,
+		#edu24fill,
+		#edu34fill,
+		#edu15fill,
+		#edu25fill,
+		#edu35fill{
+			font-size: 10pt;
+
+		}
+		/*Adding bullets between items*/
+		#edu13fill:before,
+		#edu14fill:before,
+		#edu23fill:before,
+		#edu24fill:before,
+		#edu33fill:before,
+		#edu34fill:before,
+		#edu15fill:before,
+		#edu25fill:before,
+		#edu35fill:before {
+			content: " \A0 \2022 \A0";
+		}
+
+
+	/*	======================
+		  	Skills Section
+		======================	*/
+
+	/*Skills wrapper*/
+	#pdf_skills_section{
+	}
+		/*Span wrapping the skills.
+		Bullets are placed using JS, cannot be styled differently*/
+		#skillsfill{
+			font-size: 12pt;
+			letter-spacing: 1px;
+			width:90%;
+			pad-left: 5%;
+			text-align: justify;
+			line-height: 1.6em;
+			position: relative; top:-3px;
+		}
+
+		/*Styles for the bullets specifically*/
+		.skillbullet{
+			font-size: 22pt;
+			position: relative; top:5px;
+		}
+		
+	/*
+	Chart
+	
+	*/
+	
+	.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:13px;
+	color:#fff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.4);
+}
+/*
+Slidebar
+*/
+.application-progress{
+	width: 210px;
+}

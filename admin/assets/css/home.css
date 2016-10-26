@@ -1,0 +1,311 @@
+/*
+==================================
+
+home.css
+
+stylesheet for ineedaresume.com
+home page
+
+universal styles in universal.css
+
+==================================
+*/
+
+a{
+  color: #1CD8D2;
+  transition:0.2s;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+  color: #4776e6;
+  transition:0.2s;
+}
+
+/*Home promo banner*/
+#home_pro{
+  font-family: 'Montserrat', sans-serif;
+  display: none;
+  width: 100%;
+  box-sizing:border-box;
+  padding: 8px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 12pt;
+  text-align: center;
+  font-weight: 400;
+}
+  #home_pro:hover{
+    cursor: pointer;
+  }
+  /*Close promo banner*/
+  #close_home_pro{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 0px; right: 20px;
+    font-size: 28pt;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-sizing:border-box;
+    transition:0.25s;
+  }
+    #close_home_pro:hover{
+      opacity: 1;
+      transition:0.25s;
+      cursor: pointer;
+      -webkit-tranform:rotate(90deg);
+      transform: rotate(90deg);
+    }
+      #close_home_pro:active{
+        -webkit-tranform:rotate(180deg);
+        transform: rotate(180deg);
+      }
+
+      #home_pro a{
+        color: #fff !important;
+        transtion:0.2s;
+      }
+      #home_pro a:hover{
+        color: rgba(255,255,255,0.8);
+        transition:0.2s;
+      }
+
+/*Top bar with branding*/
+#home_nav{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%; height: 80px;
+  box-sizing:border-box;
+  padding: 0px 9% 0px 9%;
+}
+  /*Logo*/
+  #home_nav img{
+    clear: both;
+    display: inline-block;
+    height: 60px;
+    margin-top: 10px;
+  }
+  /*Title*/
+  #home_nav h1{
+    display: inline-block;
+    line-height: 90px;
+    height: 90px;
+    position: relative; top:-19px;
+    margin-left: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 24pt;
+  }
+
+
+
+/*Introduction box*/
+#getting_started{
+  font-family: 'Montserrat', sans-serif;
+  height: auto;
+  overflow: hidden;
+  width: 100%; 
+  box-sizing:border-box;
+  padding: 8% 9% 3% 9%;
+}
+  /*light text tagline*/
+  #tagline{
+    font-family: 'Montserrat', sans-serif !important;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    font-size: 20pt;
+    padding: 0; margin: 0 auto;
+    box-sizing:border-box;
+    position: relative;
+    padding: 0% 0% 0 0%;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 1.4em;
+    color: rgba(52,57,75,0.2);
+  }
+    /*Main tagline*/
+    #tagline_bold{
+      font-family: 'Montserrat', sans-serif;
+      text-align: left;
+      width: 100%;
+      font-size: 38pt;
+      padding: 0; margin: 0 auto;
+      box-sizing:border-box;
+      padding: 1% 0% 0 0%;
+      font-weight: 400;
+      line-height: 1.4em;
+      letter-spacing: 2px;
+      text-transform: none;
+      font-weight: 700;
+      color: #34394b;
+    }
+    /*Small lower tagline*/
+    #tagline_small{
+      font-family: 'Montserrat', sans-serif;
+      text-align: left;
+      margin: 0 auto;
+      padding: 2% 0% 50px 0%;
+      text-transform: none;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+      #tagline_small small{opacity: 0.5;}
+
+
+
+#as_seen_on{
+  text-align: center;
+  padding-top: 55px; padding-bottom: 0px;
+}
+  #as_seen_on h2{
+    font-size: 18pt;
+    text-align: center;
+    font-weight: 300;
+    text-transform: lowercase;
+    margin-bottom: 5px;
+    color: rgba(52,57,75,0.2);
+  }
+
+  #as_seen_on img{
+    height: 40px; width: auto;
+    margin-right: 25px; margin-left: 25px;
+    margin-bottom: 22px;
+    opacity: 0.7;
+    transition:0.2s;
+  }
+    #as_seen_on img:hover{
+      cursor: pointer;
+      opacity: 1;
+      transition:0.2s;
+    }
+    
+
+  
+/*========================================
+  ========================================
+              More information
+  ========================================
+  ========================================*/
+#ayeineedmoreinfo{
+  font-family: 'Montserrat', sans-serif;
+  position: absolute; left: 0;
+  width: 100%;
+  box-sizing:border-box;
+  padding: 55px 0% 55px 0%;
+  box-sizing:border-box;
+  padding: 0 9% 0 9%;
+  border-bottom: 30px solid #000;
+}
+  #ayeineedmoreinfo h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-bottom: 25px;
+    text-transform: lowercase;
+    font-weight: 700;
+  }
+  .fivebox{
+    width: 20%;
+    float: left;
+    text-align: center;
+    box-sizing:border-box;
+    padding: 25px 0 25px 0;
+    margin-bottom: 25px;
+  }
+    .fivebox i{
+      font-size: 44pt;
+      border: 2px solid #34394b;
+      display: inline-block;
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      padding: 20px;
+      color: #34394b;
+    }
+      .fivebox i:hover{
+          transition:0.5s;
+          -webkit-tranform:rotate(359deg);
+          transform: rotate(359deg);
+      }
+      .fivebox p{
+        padding: 0; margin: 0 auto;
+        padding-top: 10px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 18pt;
+      }
+
+  /*Paragraph text styling*/
+  #ayeineedmoreinfo p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.45);
+    line-height: 2em;
+    font-size: 14pt;
+    padding: 0;
+  }
+
+    /*About me wrapper*/
+    #aboutme{
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      padding-top: 0px;
+    }
+      #aboutme a{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        color: #000;
+        transition:0.25s;
+      }
+        #aboutme a:hover{
+          cursor: pointer;
+          transition:0.25s;
+          color: #6767E5;
+        }
+    /*About me at the bottom*/
+    #madeinmadison{
+      width: 130px;
+      margin-bottom: 10px;
+      height: auto;
+    }
+      #madeinmadison:hover{
+        transition:0.55s;
+        -webkit-tranform:rotate(359deg);
+        transform: rotate(359deg);
+      }
+      #aboutme h1{
+        font-size: 10pt;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: lowercase;
+        margin: 0 auto;
+        padding: 7px 0 7px 0;
+      }
+        #aboutme h4{
+          font-weight: 12pt;
+          letter-spacing: 1px;
+          font-weight: 300;
+          font-size: 12pt;
+          padding-bottom: 5px;
+          line-height: 1.2em;
+        }
+            #aboutme h4 i{
+              margin-left: 12px; margin-right: 12px; font-size: 22pt;
+            }
+
+  #producthunted{
+    width: 190px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition:0.2s;
+  }
+    #producthunted:hover{
+      cursor: pointer;
+      opacity: 0.7;
+      transition:0.2s;
+    }
+

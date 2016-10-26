@@ -1,0 +1,401 @@
+@media only screen and (max-width: 860px) {
+   
+
+	/*========================================
+	========================================
+	          Universal
+	========================================
+	========================================*/
+
+	/*Headers*/
+
+	h2{font-size: 22pt;}
+	h3{font-size: 22pt;}
+	h4{font-size: 20pt;}
+
+	/*Buttons*/
+	.btn_standard{
+	    height: 36px;
+	    font-size: 9pt;
+	    padding: 9px 13px 10px 13px;
+	  }
+
+
+	/*========================================
+	  ========================================
+	              Home Page
+	  ========================================
+	  ========================================*/
+	/*Shrink promo banner*/
+	#home_pro{
+	  font-size: 8pt;
+	}
+	  /*Close promo banner*/
+	  #close_home_pro{
+	    font-size: 22pt;
+	  }
+
+	/*Top bar with branding*/
+	#home_nav{
+	  padding: 0px 0% 0px 0%;
+	  text-align: center;
+	}
+
+
+	/*Introduction box*/
+	#getting_started{
+	  height: auto;
+	  overflow: hidden;
+	  width: 100%; 
+	  box-sizing:border-box;
+	  padding: 15% 5% 15% 5%;
+	}
+	  /*light text tagline*/
+	  #tagline{
+	    font-size: 16pt;
+	    font-weight: 700;
+	  }
+	    /*Main tagline*/
+	    #tagline_bold{
+	      width: 100%;
+	      font-size: 28pt;
+	      padding-top: 2%;
+	    }
+	    /*Small lower tagline*/
+	    #tagline_small{
+	      font-size: 16pt;
+	      padding: 2% 0% 50px 0%;
+	    }
+
+  
+	/*========================================
+	  ========================================
+	              More information
+	  ========================================
+	  ========================================*/
+	#ayeineedmoreinfo{
+	  padding: 0 5% 0 5%;
+	}
+	  .fivebox{
+	    width: 20%;
+	    float: left;
+	    text-align: center;
+	    box-sizing:border-box;
+	    padding: 25px 0 25px 0;
+	    margin-bottom: 25px;
+	  }
+	    .fivebox i{
+	      font-size: 44pt;
+	      border: 2px solid #34394b;
+	      display: inline-block;
+	      width: 60px; height: 60px;
+	      border-radius: 50%;
+	      padding: 20px;
+	      color: #34394b;
+	    }
+	      .fivebox p{
+	        padding: 0; margin: 0 auto;
+	        padding-top: 10px;
+	        font-weight: 300;
+	        letter-spacing: 1px;
+	        font-size: 18pt;
+	      }
+
+	  /*Paragraph text styling*/
+	  #ayeineedmoreinfo p{font-size: 14pt;}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+   
+
+	/*========================================
+	========================================
+	          Universal
+	========================================
+	========================================*/
+
+	/*Headers*/
+
+	h2{font-size: 22pt;}
+	h3{font-size: 18pt; line-height: 1em;}
+	h4{font-size: 20pt;}
+
+	/*Buttons*/
+	.btn_standard{
+	    height: 56px;
+	    font-size: 12pt;
+	    padding: 17px 13px 15px 13px;
+	  }
+
+	input:focus, input:active { outline: none; }
+	* {outline: none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+
+	/*========================================
+	  ========================================
+	              Home Page
+	  ========================================
+	  ========================================*/
+	/*Shrink promo banner*/
+	#home_pro{
+	  display: none !important;
+	}
+
+	/*Top bar with branding*/
+	#home_nav{
+	  padding: 0px 0% 0px 0%;
+	  text-align: center;
+	}
+
+	/*Top bar with branding*/
+#home_nav{
+  width: 100%; height: 80px;
+  padding: 0 0 0 0;
+  text-align: center;
+}
+  /*Logo*/
+  #home_nav img{
+    height: 50px;
+  }
+  /*Title*/
+  #home_nav h1{
+   	top:-16px;
+    margin-left: 10px;
+    font-size: 18pt;
+  }
+
+	/*Introduction box*/
+	#getting_started{
+	  height: auto;
+	  overflow: hidden;
+	  width: 100%; 
+	  box-sizing:border-box;
+	  padding: 15% 5% 0% 5%;
+	}
+
+	 /*light text tagline*/
+	 #tagline{
+	   font-size: 11pt;
+	   line-height: 1.75em;
+	   letter-spacing: 0px;
+	   padding-bottom: 20px;
+	 }
+		/*Main tagline*/
+		#tagline_bold{
+			width: 100%;
+		    font-size: 26pt;
+		    padding-top: 2%;
+		    line-height: 1em;
+		    padding-bottom: 20px;
+		    letter-spacing: -2px;
+		}
+		    /*Small lower tagline*/
+			#tagline_small{
+		    	font-size: 12pt;
+		    	letter-spacing: 0px;
+		    }
+
+	#getting_started .btn_standard{
+		display: block;
+		margin-bottom: 25px;
+	}
+	/*========================================
+	  ========================================
+	              More information
+	  ========================================
+	  ========================================*/
+	#ayeineedmoreinfo{
+	  padding: 0 5% 0 5%;
+	  max-width: 100%;
+	  overflow-x:hidden;
+	}
+	  .fivebox{
+	    width: 20%;
+	  }
+	    .fivebox i{
+	      font-size: 36pt;
+	      border: 2px solid #34394b;
+	      width: 26px; height: 26px;
+	      border-radius: 50%;
+	      border: none;
+	    }
+	  /*Paragraph text styling*/
+	  #ayeineedmoreinfo p{font-size: 11pt;}
+
+}
+
+
+
+
+/*========================================
+  ========================================
+              App Shrinkage
+  ========================================
+  ========================================*/
+@media only screen and (max-width: 760px) {
+	
+
+	#welcome_back{
+		display: none !important;
+	}
+
+
+
+	#mobilenav{
+		position: relative; top: 0px;
+		z-index: 500000000000;
+		width: 100%;
+		display: block;
+		box-sizing:border-box;
+		padding: 15px 10px 13px 10px;
+		color:#fff;
+		background-color: red;
+		position: fixed;
+	}
+		#mobilenav img{
+			height: 40px;
+		}
+		#mobilenav h1{
+			color: #fff;
+			display: inline-block;
+			font-size: 18pt;
+			position: relative; top: -11px;
+			margin-left: 6px;
+		}
+		#mobile_menu_btn{
+			font-size: 32pt;
+			float: right;
+			margin-right: 10px;
+			margin-top: 1px;
+		}
+			#mobile_menu_btn:active{
+				transition:0.5s;
+	          	-webkit-tranform:rotate(180deg);
+	          	transform: rotate(180deg);
+			}
+	section{
+		width: 100%;
+		left: 0;
+		padding: 95px 0% 25px 0% !important;
+	}
+	.formwrap{
+	  	padding: 10px 25px 55px 25px;
+	}
+	.padfix{
+		float: right;
+		width: 100%;
+		margin-bottom: 45px !important;
+	}
+
+
+	nav{
+		/*display: none !important;*/
+		position: fixed; left: -100%;
+		z-index: 5000000000;
+		height: 115%;
+		transition:0.5s;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+		.navexpanded{
+			transition:0.5s;
+			left: 0;
+		}
+		nav ul li{
+	      	box-sizing: border-box;
+	      	padding: 11px 7px 10px 12px;
+	      	font-size: 9pt;
+	      	text-transform: uppercase;
+	      	border-radius: 16px;
+	      	margin-bottom: 2px;
+	      	transition:0.25s;
+	    }
+
+
+	#smallpdfwrap{
+		width: 100% !important;
+		height: auto;
+		min-height: 100%;
+		-transform-origin: 0 0;
+		position: relative;
+		text-align: center;
+	}
+	/*Actual PDF PAge*/
+	.shrunken{
+	    /*Disable these in print query*/
+	    z-index: 0;
+	    padding: 0 0.5in 0 0.5in;
+	    position: relative; top: 90px; left: 0% !important;
+	    padding: 50px 0 50px 0 !important;
+	    margin: 0 auto !important;
+	  /*-webkit-transform: scale(0.45);*/
+	    /*transform: scale(0.45);*/
+	    zoom: 0.85;
+	    transition:0s;
+	}
+
+	#settings_instructions{
+	  font-size: 14pt;
+	}
+	
+
+
+	/*========================================
+	  ========================================
+	              Form styles
+	  ========================================
+	  ========================================*/
+	  .formwrap h6{
+		  font-size: 14pt;
+		  letter-spacing: 0px;
+		}
+}
+
+/*========================================
+  ========================================
+              PDF Page Zooming
+  ========================================
+  ========================================*/
+@media only screen and (max-width: 650px) {
+	/*Actual PDF PAge*/
+	.shrunken{
+	    position: relative; top: 110px; left: 0% !important;
+	    zoom: 0.65;
+	}
+	#save_resume{
+	  width: 105px; height: 105px;
+	  font-size: 66pt !important;
+	}
+	#settings_instructions{
+	  font-size: 16pt;
+	}
+}
+@media only screen and (max-width: 550px) {
+	/*Actual PDF PAge*/
+	.shrunken{
+	    position: relative; top: 140px; left: 0% !important;
+	    zoom: 0.55;
+	}
+	#settings_instructions{
+	  font-size: 20pt;
+	}
+}
+@media only screen and (max-width: 450px) {
+	/*Actual PDF PAge*/
+	.shrunken{
+	    position: relative; top: 180px; left: 0% !important;
+	    zoom: 0.45;
+	}
+}
+@media only screen and (max-width: 350px) {
+	/*Actual PDF PAge*/
+	.shrunken{
+	    position: relative; top: 190px; left: 0% !important;
+	    zoom: 0.55;
+	}
+}

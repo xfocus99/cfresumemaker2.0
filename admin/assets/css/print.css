@@ -1,0 +1,121 @@
+@media print {
+	#mobilenav,
+	#welcome_back,
+	nav, progress,
+	#section_information, 
+	#section_statement,
+	#section_work,
+	#section_projects,
+	#section_education,
+	#section_skills,
+	#section_customization,
+	#section_done,
+	#edit_resume,
+	#save_resume,
+	#settings_instructions,
+	#settings_toggle,
+	#hidethismoney,	
+	#navbar,
+	#titlewebsite
+	{
+		display: none !important;
+	}
+	#print_page{
+
+		display: block;
+		/*box-sizing:border-box;*/
+
+		/*Disabled these in print query*/
+		z-index: 0;
+		box-shadow: none;
+		position: absolute;
+		top:0px !important; left:0%;
+		margin-left: 0;
+		margin-top: 0 !important;
+		margin-bottom: 0;
+
+
+		border: none !important;
+
+		border-top: 5px solid blue;
+		
+
+	}
+	#pdf_experience_section h2,
+	#pdf_projects_section h2,
+	#job_1_employer,
+	#job_1_loc,
+	#job_1_time,
+	#job1_title,
+	#job_2_employer,
+	#job_2_loc,
+	#job_2_time,
+	#job2_title,
+	#job_3_employer,
+	#job_3_loc,
+	#job_3_time,
+	#job3_title,
+	#pdf_education_section h2,
+	#pdf_edu_1,
+	#pdf_edu_2,
+	#pdf_edu_3,
+	#pdf_skills_section
+	{
+		page-break-inside: avoid;
+	}
+	#pdf_statement,
+	#pdf_job1_emp_desc,
+	#pdf_job1_job_desc,
+	#pdf_job2_emp_desc,
+	#pdf_job2_job_desc,
+	#pdf_job3_emp_desc,
+	#pdf_job4_job_desc{
+		page-break-inside:always;
+	}
+	hr{
+		page-break-after: avoid;
+		page-break-before: always;
+	}
+
+}
+@page {
+	size: auto;   
+	margin: 10mm; 
+}
+
+
+/*Awesome link underlining*/
+p > a {
+  position: relative;
+  color: #f5414c;
+  text-decoration: none;
+}
+
+p > a:hover {
+  color: #f5414c;
+}
+
+p > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2;
+  left: 0;
+  background-color: #f5414c;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+p > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#settings_instructions a:hover:before {
+	visibility: hidden;
+}
